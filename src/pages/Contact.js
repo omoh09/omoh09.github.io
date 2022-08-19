@@ -8,20 +8,22 @@ const Contact = () => {
     <div class="container pt-5">
         <h2>Contact Me</h2>
         <div class="row">
-            <div class="col-md-6 text-left contact ">
+            <div class="col-md-6 text-left">
                 <span className=''>
                     <h3 class='font-monospace'>Get in Touch</h3>
+                    <p>It takes less than 2 seconds to send me a message</p>
                     <Icons /> 
                 </span>
-                <span className=''>
-                    <img src={email} alt='email icon'/>
-                    <small> gabrielifoga@yahoo.com</small>
-                </span><br />
-                <span>
-                    <img src={phone} alt='email icon'/>
-                    <small> +234 814 114 0118</small>
-                </span>
-               
+                <div className='email-phone mt-5'>
+                    <div className=''>
+                        <img src={email} alt='email icon'/>
+                        <small> gabrielifoga@yahoo.com</small>
+                    </div>
+                    <div className='pt-4'>
+                        <img src={phone} alt='email icon'/>
+                        <small> +234 814 114 0118</small>
+                    </div>
+                </div>
             </div>
             <div class="col-md-5 text-left">
                 <p>Need Service</p>

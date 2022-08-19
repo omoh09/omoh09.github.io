@@ -5,11 +5,11 @@ import twitter from '../assets/twitter.svg'
 function Icons() {
   return (
     <div>
-      <span className='p-4' >
-        <img src={linkedin} alt='icon'/> 
+      <span className='pr-3' >
+        <a href='https://www.linkedin.com/in/gabriel-ifoga-56b821197/'><img src={linkedin} alt='icon'/></a> 
       </span>
       <span className=''>
-        <img src={linkedin} alt='icon'/> 
+        <a href='https://twitter.com/dr_omoh'><img src={twitter} alt='icon'/> </a>
       </span>
     </div>
   )

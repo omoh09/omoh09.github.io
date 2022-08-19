@@ -1,7 +1,7 @@
 
 
 .about {
-    margin-top: 120px;
+    margin-top: 100px;
     align-items: left;
     
 }
@@ -14,4 +14,52 @@
 
 .contact span{
     margin-top: 200px;
+}
+
+.navbar-font{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.hi-there{
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    /* Xyluz Blue */
+
+    color: #2351DC;
+}
+
+.name-heading{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    /* Xyluz Blue */
+
+    color: #2351DC;
+}
+
+.about-description {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    /* or 150% */
+
+
+    color: #000000;
 }
