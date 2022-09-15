@@ -6,11 +6,11 @@ function Icons() {
   return (
     <div>
       <span className='pr-3' >
-        <a href='https://www.linkedin.com/in/gabriel-ifoga-56b821197/'><img src={linkedin} alt='icon'/></a> 
+        <a href='https://www.linkedin.com/in/gabrielifoga'  target="_blank" ><img src={linkedin} alt='icon'/></a> 
       </span>
       <span className=''>
-        <a href='https://twitter.com/dr_omoh'><img src={twitter} alt='icon'/> </a>
-      </span>
+        <a href='https://twitter.com/dr_omoh' target="_blank" ><img src={twitter} alt='icon'/> </a>
+      </span>              
     </div>
   )
 }

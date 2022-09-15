@@ -46,7 +46,7 @@ const About = () => {
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                        Working as a freelancer
+                        Working as a freelancer since 2019
                     </div>
                 </div>
             </div>
@@ -61,14 +61,20 @@ const About = () => {
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body text-left">
-                        <ul>
+                        <ol>
                             <li>PHP</li>
                             <li>Laravel</li>
-                            <li>MySQL</li>
+                            <li>Domain Driven Design (DDE)</li>
+                            <li>Repository patterns</li>
+                            <li>MySQL % Database structuring</li>
                             <li>MongoDB</li>
                             <li>HTML/CSS</li>
+                            <li>Bootstrap</li>
                             <li>Linux</li>
-                        </ul>
+                            <li>Infrastructure Setup/Migration/Cloud Architecture</li>
+                            
+
+                        </ol>
                     </div>
                 </div>
             </div>

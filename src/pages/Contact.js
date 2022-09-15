@@ -11,7 +11,9 @@ const Contact = () => {
             <div class="col-md-6 text-left">
                 <span className=''>
                     <h3 class='font-monospace'>Get in Touch</h3>
-                    <p>It takes less than 2 seconds to send me a message</p>
+                    <p>If you’re interested in any of my services and you’d like to know more about how we can work together, drop me a Text or Eamil. I’ll read every message thoroughly and will get back to you as soon as I can.
+
+</p>
                     <Icons /> 
                 </span>
                 <div className='email-phone mt-5'>
