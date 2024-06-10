@@ -28,6 +28,39 @@
   <link id="color-scheme" rel="stylesheet" href="css/colors/main-darkgreen.css">
   <!-- Custom CSS (Add your custom CSS styles to this file)-->
   <link rel="stylesheet" href="css/custom.css">
+  <style>
+    .home-area {
+            background-image: url('img/image-info.jpeg');
+            background-position: top 0 left 400px;
+            background-size: cover;
+            width: 100%;
+            position: absolute;
+            background-color: rgba(167, 105, 64, 66);
+        }
+        @media (max-width: 1024px) {
+            .home-area {
+                background-position: top 0 left 200px;
+            }
+        }
+        /* Media query for mobile screens */
+        @media (max-width: 767px) {
+            .home-area {
+                background-position: top 0 left 50px;
+            }
+        }
+        .service-description {
+            display: inline;
+        }
+
+        .read-more-content {
+            display: none;
+        }
+
+        .read-more-button {
+            color: blue;
+            cursor: pointer;
+        }
+  </style>
 </head>
 
 <body class="theme-dark">
@@ -40,8 +73,8 @@
   <div id="overlay-effect"></div>
   <!-- Navbar-->
   <nav class="navbar-expand-md navbar fixed-top" id="navbar"><a class="navbar-brand" data-scroll="" href="#home-area">
-      <!-- Navbar Logo--> G.I
-      <!-- <img class="img-fluid" src="img/img-kitzu-logo.png" alt="Logo"> -->
+      <!-- Navbar Logo--> 
+      <img class="img-fluid" style="border-radius: 50%;box-shadow: 0 0 10px rgba(255, 255, 255, 2.8); width: 50px;" src="img/favicons/favicon-16x16.png" alt="Logo">
       </a>
     <span class="navbar-menu ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" role="button"><span class="btn-line"></span></span>
     <div class="collapse navbar-collapse order-1 order-lg-0" id="navbarSupportedContent">
@@ -56,7 +89,7 @@
     </div>
   </nav>
   <!-- Home-->
-  <section class="home-area element-cover-bg" id="home" style="background-image:url(img/home.jpg)">
+  <section class="home-area element-cover-bg" id="home">   
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center">
         <div class="col-12 col-lg-8 home-content text-center">
@@ -107,15 +140,50 @@
             <div class="info-section single-section">
               <div class="row align-items-center">
                 <!-- Picture part-->
-                <div class="col-12 col-lg-5 info-img"><img class="img-fluid img-thumbnail" src="img/info-img.jpg" alt="About Picture"></div>
+                <!-- <div class="col-12 col-lg-5 info-img"><img class="img-fluid img-thumbnail" src="img/image-info.jpg" alt="About Picture"></div> -->
                 <!-- Content part-->
                 <div class="col-12 col-lg-7 info-content">
                   <div class="content-block">
                     <h2 class="content-subtitle">Who am i?</h2>
-                    <h6 class="content-title">I'm Gabriel Ifoga, a top notch fullstack software Developer</h6>
-                    <div class="content-description">
-                      <p>I am a freelancer based in Africa and i have been building testable and worthy web applications for 10 years, which comply with the latest design trends. 
-                       I am passionate and goal driven Techpreneur whose interest is in using technology to build solutions and solve real world problems.</p>
+                    <h6 class="content-title">I am a dedicated software engineer and product developer</h6>
+                    <div class="content-description" style="text-align: justify;">
+                     <p> I am a dedicated software engineer and product developer, focusing 
+                      on creating scalable, high-quality solutions for businesses. 
+                      Over three years, I have gained experience in various industries, 
+                      specializing in designing and developing software applications that 
+                      prioritize maintainability and durability. My expertise includes 
+                      application architecture, automated deployments, and database design, 
+                      as well as basic networking and bash scripting skills. </p>
+                      <span class="read-more-content">
+                      <p>Throughout my career, I have successfully implemented software solutions 
+                      that have significantly enhanced business operations and efficiency. 
+                      My technical skills encompass a variety of languages, frameworks, databases, 
+                      and tools. <br />
+                      These include languages such as PHP, Python, JavaScript, Deluge, c#, 
+                      and Bash scripting, frameworks like Laravel, React, FastAPI, Flask, 
+                      and Zoho Creator, and databases including MySQL and Postgres. I also 
+                      have experience with tools such as Git, Docker, Basic Networking, SSH, 
+                      Apache, and Redis. </p>
+
+                      <p>I have a proven track record of delivering projects on time and within budget 
+                      while ensuring the highest quality standards. My approach to software development 
+                      revolves around understanding the unique needs of each business and creating 
+                      customized solutions that drive growth and success. </p>
+
+                      <p>I thrive in environments where innovation and teamwork are central to success. 
+                      Collaborating with cross-functional teams and sharing knowledge is something 
+                      I enjoy, as it allows for continuous skill improvement and contributes to the 
+                      collective success of the team. My commitment to continuous learning and 
+                      staying updated with the latest industry trends enables me to apply cutting-edge 
+                      solutions to projects, ensuring their competitiveness and effectiveness in a 
+                      rapidly changing market. </p>
+
+                      <p>I would be delighted to discuss potential job or collaboration opportunities 
+                      if you seek a skilled software engineer and product developer who can bring 
+                      innovative solutions to your business. Please don't hesitate to contact me 
+                      at gabrielifoga@yahoo.com.</p>
+                      </span>
+                      <span class="read-more-button">Read More</span>
                     </div>
                     <address class="content-info">
                       <div class="row">
@@ -128,14 +196,14 @@
                       </div>
                       <div class="row">
                         <div class="col-12 col-md-6 single-info"><span>Major:</span>
-                          <p><em>Computer Science</em></p>
+                          <p><em>Software Enginerring</em></p>
                         </div>
                         <div class="col-12 col-md-6 single-info"><span>From:</span>
                           <p>Lagos, Nig</p>
                         </div>
                       </div>
                     </address>
-                    <div class="d-block d-sm-flex align-items-center"><a class="btn content-download button-main button-scheme" href="#0" role="button">Download CV</a>
+                    <div class="d-block d-sm-flex align-items-center"><a class="btn content-download button-main button-scheme" href="./img/GabrielIfogaCV.pdf" download="GabrielIfoga_Resume.pdf" role="button">Download CV</a>
                       <ul class="list-unstyled list-inline content-follow">
                         <li class="list-inline-item"><a href="https://twitter.com/dr_omoh"><i class="icon ion-logo-twitter"></i></a></li>
                         <li class="list-inline-item"><a href="#0"><i class="icon ion-logo-instagram"></i></a></li>
@@ -181,19 +249,19 @@
                 </div> -->
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-logo-wordpress"></i>
+                  <div class="single-service">
+                    <!-- <i class="icon service-icon ion-logo-wordpress"></i> -->
                     <h6 class="service-title">MVC Application Development</h6>
-                    <p class="service-description">I develop scalable web applcation and software, that stand the test of time. 
-                      if you are developing your first app and looking to have a solid architecture, 
-                      I am the right fit for you. I’ve developed scores of apps for my clients, employers, 
-                      in past and can help you with my experience to prevent early mistakes in your new app
-
-                      .</p>
+                    <p class="service-description">
+                      I develop scalable web applications with solid architecture, ensuring 
+                      long-term success and avoiding early mistakes.
+                    </p>                  
                   </div>
                 </div>
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-md-move"></i>
+                  <div class="single-service">
+                    <!-- <i class="icon service-icon ion-md-move"></i> -->
                     <h6 class="service-title">Fully Responsive Web design</h6>
                     <p class="service-description">I Help design Mobile-friendly, worldclass websites that helps scales 
                       your bussiness and helps user experience get better..</p>
@@ -201,12 +269,112 @@
                 </div>
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-ios-rocket"></i>
+                  <div class="single-service">
+                    <!-- <i class="icon service-icon ion-ios-rocket"></i> -->
                     <h6 class="service-title">Database Development</h6>
                     <p class="service-description">With equipped skills of developing and maintaining databases 
                       i could help develop scalable and optimized databases for your organization.</p>
                   </div>
                 </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service">
+                    <!-- <i class="icon service-icon ion-ios-rocket"></i> -->
+                    <h6 class="service-title">Web App Revamping</h6>
+                    <p class="service-description">
+                      A web app revamp enhances UI/UX, updates technology, improves performance, 
+                      and adds new features for a better user experience.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service">
+                    <h6 class="service-title">Custom Software Architecture</h6>
+                    <p class="service-description">
+                      Design and implement scalable, maintainable software architectures 
+                      tailored to your specific business needs
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service">
+                    <h6 class="service-title">Business Process Automation</h6>
+                    <p class="service-description">
+                      Automate repetitive tasks and streamline workflows to increase efficiency 
+                      and reduce operational costs.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service">
+                    <h6 class="service-title">Enterprise System Integration</h6>
+                    <p class="service-description">
+                      Integrate various enterprise systems to ensure seamless data flow 
+                      and improved organizational efficiency
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service">
+                    <h6 class="service-title">Cloud Migration and Integration</h6>
+                    <p class="service-description">
+                      Migrate existing applications to the cloud and integrate 
+                      cloud services to enhance scalability and reliability.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service">
+                    <h6 class="service-title">API Development and Integration</h6>
+                    <p class="service-description">
+                      Develop and integrate APIs to enable communication between 
+                      different software systems and enhance functionality.                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service">
+                    <h6 class="service-title">Performance Optimization</h6>
+                    <p class="service-description">
+                      Optimize application performance to ensure fast, reliable, 
+                      and efficient operation under varying loads.                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service">
+                    <h6 class="service-title">Security Enhancements</h6>
+                    <p class="service-description">
+                      Implement robust security measures to protect sensitive 
+                      data and ensure compliance with industry standards.                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service">
+                    <h6 class="service-title">Ongoing Maintenance and Support</h6>
+                    <p class="service-description">
+                      Provide continuous maintenance and support to address any issues 
+                      and implement further improvements.                    
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="single-service">
+                    <h6 class="service-title">User Training and Documentation</h6>
+                    <p class="service-description">
+                      Offer comprehensive user training and detailed documentation to 
+                      ensure smooth adoption and usage of new systems.
+                    </p>
+                  </div>
+                </div>
+
               </div>
             </div>
             <!-- Testimonials section-->
@@ -397,13 +565,25 @@
               <div class="row">
                 <div class="col-12 col-md-6">
                   <div class="single-skill" data-percentage="95">
-                    <div class="skill-info"><span class="skill-name">PHP</span><span class="skill-percentage"></span></div>
+                    <div class="skill-info"><span class="skill-name">PHP programming</span><span class="skill-percentage"></span></div>
                     <div class="progress skill-progress">
                       <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
                   <div class="single-skill" data-percentage="95">
-                    <div class="skill-info"><span class="skill-name">Laravel</span><span class="skill-percentage"></span></div>
+                    <div class="skill-info"><span class="skill-name">Python programming</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="single-skill" data-percentage="95">
+                    <div class="skill-info"><span class="skill-name">Deluge Scripting</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="single-skill" data-percentage="95">
+                    <div class="skill-info"><span class="skill-name">Laravel framework</span><span class="skill-percentage"></span></div>
                     <div class="progress skill-progress">
                       <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -420,13 +600,13 @@
                       <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
-                  <div class="single-skill" data-percentage="80">
-                    <div class="skill-info"><span class="skill-name">Web Design</span><span class="skill-percentage"></span></div>
+                  <div class="single-skill" data-percentage="90">
+                    <div class="skill-info"><span class="skill-name">Api development and MVC partern</span><span class="skill-percentage"></span></div>
                     <div class="progress skill-progress">
                       <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
-                  <div class="single-skill" data-percentage="70">
+                  <div class="single-skill" data-percentage="50">
                     <div class="skill-info"><span class="skill-name">Kubernetics</span><span class="skill-percentage"></span></div>
                     <div class="progress skill-progress">
                       <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -438,10 +618,52 @@
                       <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
+                  <div class="single-skill" data-percentage="98">
+                    <div class="skill-info"><span class="skill-name">Bash scripting</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="single-skill" data-percentage="98">
+                    <div class="skill-info"><span class="skill-name">MySQL</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="single-skill" data-percentage="98">
+                    <div class="skill-info"><span class="skill-name">Postgres</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-12 col-md-6">
+                  <div class="single-skill" data-percentage="98">
+                    <div class="skill-info"><span class="skill-name">Database enginering</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="single-skill" data-percentage="95">
+                    <div class="skill-info"><span class="skill-name">Software achiteture</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="single-skill" data-percentage="95">
+                    <div class="skill-info"><span class="skill-name">Database modelling</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="single-skill" data-percentage="90">
+                    <div class="skill-info"><span class="skill-name">Flask framework</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
                   <div class="single-skill" data-percentage="70">
-                    <div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-percentage"></span></div>
+                    <div class="skill-info"><span class="skill-name">JavaScript vanila</span><span class="skill-percentage"></span></div>
                     <div class="progress skill-progress">
                       <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -458,7 +680,7 @@
                       <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
-                  <div class="single-skill" data-percentage="70">
+                  <div class="single-skill" data-percentage="50">
                     <div class="skill-info"><span class="skill-name">TypeScript</span><span class="skill-percentage"></span></div>
                     <div class="progress skill-progress">
                       <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -466,6 +688,12 @@
                   </div>
                   <div class="single-skill" data-percentage="80">
                     <div class="skill-info"><span class="skill-name">Bootstrap</span><span class="skill-percentage"></span></div>
+                    <div class="progress skill-progress">
+                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="single-skill" data-percentage="80">
+                    <div class="skill-info"><span class="skill-name">Git</span><span class="skill-percentage"></span></div>
                     <div class="progress skill-progress">
                       <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -691,14 +919,34 @@
               <div class="row">
                 <!-- Contact form-->
                 <div class="col-12 col-lg-7">
-                  <form class="contact-form" id="contact-form" action="php/contact.php">
+                  <form class="contact-form" method="post" action="php/contact.php">
                     <h4 class="content-title">Message Me</h4>
                     <div class="row">
-                      <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-name" type="text" name="name" placeholder="Name" required=""></div>
-                      <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-email" type="email" name="email" placeholder="Email" required=""></div>
-                      <div class="col-12 form-group"><input class="form-control" id="contact-subject" type="text" name="subject" placeholder="Subject" required=""></div>
+                      <div class="col-12 col-md-6 form-group"><input class="form-control" type="text" name="name" placeholder="Name" required=""></div>
+                      <div class="col-12 col-md-6 form-group"><input class="form-control" type="email" name="email" placeholder="Email" required=""></div>
+                      <div class="col-12 form-group">
+                        <select class="form-control" id="contact-subject" name="subject" required="">
+                          <option value="" selected disabled>Select Subject</option>
+                          <option value="MVC Application Development">MVC Application Development</option>
+                          <option value="Database Development">Database Development</option>
+                          <option value="Custom Software Architecture">Custom Software Architecture</option>
+                          <option value="Business Process Automation">Business Process Automation</option>
+                          <option value="Enterprise System Integration">Enterprise System Integration</option>
+                          <option value="Cloud Migration and Integration">Cloud Migration and Integration</option>
+                          <option value="API Development and Integration">API Development and Integration</option>
+                          <option value="Performance Optimization">Performance Optimization</option>
+                          <option value="Security Enhancements">Security Enhancements</option>
+                          <option value="Ongoing Maintenance and Support">Ongoing Maintenance and Support</option>
+                          <option value="User Training and Documentation">User Training and Documentation</option>
+                          <option value="Web App Revamping">Web Application Revamping</option>
+                          <option value="Consultation">Consultation</option>
+                          <option value="Others">Others</option>
+                        </select>
+                      
+                      </div>
                       <div class="col-12 form-group form-message"><textarea class="form-control" id="contact-message" name="message" placeholder="Message" rows="5" required=""></textarea></div>
-                      <div class="col-12 form-submit"><button class="btn button-main button-scheme" id="contact-submit" type="submit">Send Message</button>
+                      <div class="col-12 form-submit">
+                        <input class="btn button-main button-scheme" id="contact-submit" name="submit" value="Send Message" type="submit"> 
                         <p class="contact-feedback"></p>
                       </div>
                     </div>
@@ -749,6 +997,22 @@
     </div>
   </div>
   <!-- Scripts-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var readMoreButton = document.querySelector('.read-more-button');
+        var readMoreContent = document.querySelector('.read-more-content');
+
+        readMoreButton.addEventListener('click', function () {
+            if (readMoreContent.style.display === 'none') {
+                readMoreContent.style.display = 'inline';
+                readMoreButton.textContent = 'Read Less';
+            } else {
+                readMoreContent.style.display = 'none';
+                readMoreButton.textContent = 'Read More';
+            }
+        });
+    });
+</script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/imagesloaded.pkgd.min.js"></script>

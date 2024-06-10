@@ -185,122 +185,122 @@ a.text-custom:focus {
 
 /*----------- Globals -----------*/
 ::-moz-selection {
-  background-color: #009e66;
+  background-color: #A76942;
   color: #fff;
 }
 
 ::selection {
-  background-color: #009e66;
+  background-color: #A76942;
   color: #fff;
 }
 
 a:not(.btn) {
-  color: #009e66;
+  color: #A76942;
 }
 
 a:not(.btn):hover,
 a:not(.btn):focus {
-  color: #005235;
+  color: #7d3204;
 }
 
 .color-scheme {
-  color: #009e66;
+  color: #A76942;
 }
 
 .background-scheme {
-  background-color: #009e66;
+  background-color: #A76942;
 }
 
 .btn.button-scheme {
-  background-color: #009e66 !important;
-  border: 1px solid #009e66 !important;
+  background-color: #A76942 !important;
+  border: 1px solid #A76942 !important;
 }
 
 .btn.button-scheme:focus {
-  background-color: #005235 !important;
-  border-color: #005235 !important;
+  background-color: #7d3204 !important;
+  border-color: #7d3204 !important;
   box-shadow: none !important;
 }
 
 .btn.button-outline {
   background-color: transparent !important;
-  border: 1px solid #009e66 !important;
+  border: 1px solid #A76942 !important;
   color: #222 !important;
 }
 
 .btn.button-outline:focus {
   background-color: rgba(34, 34, 34, 0.05) !important;
-  border-color: #005235 !important;
+  border-color: #7d3204 !important;
   box-shadow: none !important;
 }
 
 .lightbox-wrapper .lightbox-content .section-heading.page-heading>.animated-bar {
-  background-color: #009e66;
+  background-color: rgba(167, 105, 64, 66);
 }
 
 /*----------  About ligthbox  ----------*/
 /* About: Info */
 .info-section .info-content .content-subtitle {
-  color: #009e66;
+  color: #A76942;
 }
 
 .info-section .info-content .content-follow li a:hover,
 .info-section .info-content .content-follow li a:focus {
-  color: #009e66;
+  color: #A76942;
 }
 
 /* About: Services */
 .services-section .single-service:hover {
-  border-bottom-color: #009e66;
+  border-bottom-color: #A76942;
 }
 
 .services-section .single-service .service-icon {
-  color: #009e66;
+  color: #A76942;
 }
 
 /* About: Testimonials */
 .testimonials-section .single-review .review-icon {
-  color: #009e66;
+  color: #A76942;
 }
 
 /* About: Pricing */
 .pricing-section .single-plan .plan-icon {
-  color: #009e66;
+  color: #A76942;
 }
 
 /*----------- Resume lightbox -----------*/
 /* Resume: Resume */
 .resume-section .resume-item {
-  border-left-color: #009e66;
+  border-left-color: #A76942;
 }
 
 .resume-section .resume-item .item-arrow:before {
-  background-color: #009e66;
+  background-color: #A76942;
 }
 
 .resume-section .resume-item .item-arrow:after {
-  border-left-color: #009e66;
+  border-left-color: #A76942;
 }
 
 /* Resume: Skills */
 .skills-section .single-skill .skill-progress .progress-bar {
-  background-color: #009e66;
+  background-color: #A76942;
 }
 
 /*----------- Portfolio lightbox -----------*/
 /* Portfolio: Portfolio */
 .portfolio-section .filter-control>li:hover,
 .portfolio-section .filter-control>li.tab-active {
-  color: #00bd7a;
+  color: #A76942;
 }
 
 .portfolio-section .filter-control>li:hover:before,
 .portfolio-section .filter-control>li.tab-active:before {
-  background-color: #00bd7a;
+  background-color: #A76942;
 }
 
 .portfolio-section .portfolio-grid .portfolio-wrapper .item-content .content-more {
-  color: #009e66;
+  color: #A76942;
 }
 
 /*----------  Blog lightbox  ----------*/
@@ -312,9 +312,9 @@ a:not(.btn):focus {
 /*----------  Contact Lightbox  ----------*/
 /* Contact: Contact */
 .contact-section .contact-form .form-group .form-control:focus {
-  border-bottom: 1px solid #00d187;
+  border-bottom: 1px solid #A76942;
 }
 
 .contact-section .contact-info .list-info .info-icon i {
-  color: #009e66;
+  color: #A76942;
 }
